@@ -1,0 +1,20 @@
+flex teacLex.l
+bison -d -v -r all teacParser.y
+gcc -o mycompiler teacParser.tab.c lex.yy.c cgen.c -lfl
+./mycompiler < correct1.tc
+gcc c_output.c -o compiled_c
+./compiled_c
+
+
+
+O Kwdikas grafei sto arxeio c_output.c  kante tin parapano diadikasia me ./mycompiler < correct1.tc h me ./mycompiler < correct2.tc kai epeita prepei 
+na diagrapsete to periexomeno tou c_output.c prin epanalavete tin diadikasia p.x gia to correct2.tc 
+
+
+Epidi otan alakse h ekfonish eixa kanei tis if na termatizoun me ena mono fi para8etw kai ton kodika kai gia ena fi ka8os kai kodika gia fi osa ta else if.
+Mono prepei na vgoun ta sxolia apo thn seira 320-324 kai apo tin seira 214 kai na mpoun sxolia sthn sira 211 kai 307-309...kai na vgalete tis perites
+fi apo ta correct 1,2.... Aytaaaaaa...!!!
+
+
+
+( Min Valete 10 sto correct2 :) )

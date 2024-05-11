@@ -1,0 +1,7 @@
+const s[50] <- "\nDwsete ena 10araki sto project :)\n": string;
+const s1[50] <- "Antonis Maragoudakis TEAC program\nA.M=201303009\n": string;
+let x[10], y[], z, k[7] : real;
+let a[], b[2], c, d[12] : real;
+
+
+-- apeteite main

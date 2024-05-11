@@ -1,0 +1,116 @@
+C:\Users\antma\source\repos\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\Users\antma\source\repos\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\Users\antma\source\repos\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\Users\antma\source\repos\Interface1\Interface1\bin\Debug\Interface1.xml
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.vbprojAssemblyReference.cache
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.xml
+C:\Users\antma\source\repos\Interface1\Interface1\obj\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\Users\antma\Desktop\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\Users\antma\Desktop\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Interface1\Interface1\bin\Debug\Interface1.xml
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.vbprojAssemblyReference.cache
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.xml
+C:\Users\antma\Desktop\Interface1\Interface1\obj\Debug\Interface1.pdb
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\bin\Debug\Interface1.xml
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.vbprojAssemblyReference.cache
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.xml
+C:\Users\antma\Desktop\InterfaceAplo\Interface1\Interface1\obj\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\bin\Debug\Interface1.xml
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.vbprojAssemblyReference.cache
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.xml
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.Form0.resources
+C:\Users\antma\Desktop\Case 1\Interface1\Interface1\obj\Debug\Interface1.Form2.resources
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\bin\Debug\Interface1.xml
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.vbprojAssemblyReference.cache
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.Form0.resources
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.Form3.resources
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.Form2.resources
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.xml
+C:\Users\antma\Desktop\New folder (2)\Interface1\Interface1\obj\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\bin\Debug\Interface1.xml
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.vbprojAssemblyReference.cache
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form0.resources
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form3.resources
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form2.resources
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.xml
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.pdb
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form4.resources
+C:\Users\antma\Desktop\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form5.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\bin\Debug\Interface1.xml
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.vbproj.AssemblyReference.cache
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form0.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form3.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form2.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form4.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.Form5.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.xml
+C:\Users\antma\Desktop\buckup\Case 3\Interface1\Interface1\obj\Debug\Interface1.pdb
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.vbproj.AssemblyReference.cache
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.Form1.resources
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.Form0.resources
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.Form3.resources
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.Form2.resources
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.Form4.resources
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.Form5.resources
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.Resources.resources
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.vbproj.GenerateResource.cache
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.vbproj.CoreCompileInputs.cache
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.exe
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.xml
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\obj\Debug\Interface1.pdb
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\bin\Debug\Interface1.exe.config
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\bin\Debug\Interface1.exe
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\bin\Debug\Interface1.pdb
+D:\Thesis Inventor\Εφαρμογή - Κώδικας\Interface1\Interface1\bin\Debug\Interface1.xml

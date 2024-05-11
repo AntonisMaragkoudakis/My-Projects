@@ -1,0 +1,66 @@
+#!/bin/bash
+
+for j in ${*:1}                  # Edw ksekinaei mia for pou gia kathe arxeio input pou dinetai apo to terminal kanei tin parakatw diadikasia
+do
+
+	length=0
+	input="$j"
+	while IFS=":" read x y       # Gia kathe tetoio arxeio loipon analyw se x kai y deksia kai aristera apo to ":"
+	do
+  		length=$(($length+1))    # Edw metraw posa dianysmata exw sto arxeio
+  		x[length]=$x             # Opou x[length] kai y[length] oi times gia kathe dianisma sthn seira length
+  		y[length]=$y
+	done < "$input"              # To IFS lamvanei topo se kathe $"input" ksexwrista, afou gia kathe $j (line 8) exw input="$j"
+	#echo $length
+	#echo ${x[@]}
+	#echo ${y[@]}
+
+
+	sumx=0
+	sumy=0
+	sumxy=0
+	sumxx=0
+	for ((i=1; i<=length; i++))
+	do                                                    # Edw me thn xrhsh ths for ypologizw ta zhtoumena apo thn ekfwnish synolika athroismata
+  		sumx=$(echo "$sumx+(${x[i]})" | bc)
+ 		sumy=$(echo "$sumy+(${y[i]})" | bc)                 # Gia na kanw prakseis me dekadikous prepei na xrhsimopoihsw 
+  		sumxy=$(echo "$sumxy+(${x[i]})*(${y[i]})" | bc)   # to calculator. Gia ayto kai xrhsimopoiw thn entolh | bc  
+  		sumxx=$(echo "$sumxx+(${x[i]})*(${x[i]})" | bc)
+	done
+	#echo $sumx
+  	#echo $sumy
+  	#echo $sumxy
+  	#echo $sumxx
+ 
+    
+    flag=1
+	for ((i=2; i<=length; i++))                  # Se aythn thn for pairnw flag=length mono otan ola ta x einai isa metaksi tous
+	do                                           # Etsi otan flag=length tha piasw thn periptwsh ths diereshs me to miden
+  	    if [ "${x[i]}" == "${x[i-1]}" ]; then
+           flag=$(($flag+1))
+        fi
+    done
+
+
+  	if [ "$flag" == "$length" ]; then             # Stin periptwsh dld opou ola ta x[i] einai isa vazw tis analoges times sta a, b, c, err
+        a=1
+        b=$(echo "scale=2; -(${x[1]})/1" | bc)    # Mia timh twn omoiwn x, px sthn thesh 1 , b=-x[1]. To evala dia "/1" giati parathrhsa oti 
+        c=0                                       # etsi mou doulepse kalytera to scale=2 kai pairnw 2 dekadika psifia.
+        err=0
+    else                                                                                     # Alliws sthn genikh periptwsh
+                                                                                             # Ypologizw ta zhtoumena apo thn ekfwnish a kai b
+     	a=$(echo "scale=2; ($length*$sumxy-$sumx*$sumy)/($length*$sumxx-$sumx*$sumx)" | bc)  # me ti xrhsh calculator (bc) logo praksewn me dekadikous
+     	b=$(echo "scale=2; ($sumy-($a)*$sumx)/($length)" | bc)                               # kai me to scale=2 pairnw akrivia 2 dekadikwn psifiwn.
+     	c=1                                                                                 
+        
+        temp_err=0
+        for ((i=1; i<=length; i++))                                                                # Edw ypologizw to err me vash ton typo tou synolikou athroismatos pou dwthike
+	    do                                                                                                          # Me thn xrhsh ths for ypologizw ayto to synoliko athroisma
+	       temp_err=$(echo "($temp_err)+((${y[i]})-(($a)*(${x[i]})+($b)))*((${y[i]})-(($a)*(${x[i]})+($b)))" | bc)  # Edw xwris scale ypologizw me megisth akrivia to err
+	    done   
+        err=$(echo "scale=2; $temp_err/1" | bc)   # Edw pairnw to err me dyo mono dekadika psifia
+
+    fi                                                                                       
+
+	echo FILE: $j, a=$a b=$b c=$c err=$err     # Edw grafw sto terminal ta apotelesmata me thn morfh pou zhthike
+done

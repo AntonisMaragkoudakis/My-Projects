@@ -1,0 +1,125 @@
+#!/bin/bash
+
+exec < "$1"                                               # Edw pairnw to arxeio eisodou pou dinetai apo thn entolh sto terminal   
+
+length=0
+while IFS=":" read x y                                    # Diavazw to arxeio kai spaw gia kathe ":" se x kai y deksia kai aristera tou
+do
+    length=$(($length+1))
+    omada1[length]="$(echo "$x" | cut -d'-' -f1)" 
+	omada2[length]="$(echo "$x" | cut -d'-' -f2)"         # Edw gia megalyterh eykolia diaxeirishs, spaw se 4 pinakes ta dedomena tou arxeiou 
+	score1[length]="$(echo "$y" | cut -d'-' -f1)"         # Ayto ginetai apo to x kai y ta opoia spaw deksia kai aristera kai telika grafw ta 4 dedomena mou se 4 pinakes 
+	score2[length]="$(echo "$y" | cut -d'-' -f2)"
+done
+
+#echo $length
+#echo ${omada1[@]}         # Me vash tous pinakes aftous kataskevazw parakatw ton pinaka vathmoi pou eksigw sthn seira 38 ti periexei. 
+#echo ${omada2[@]}
+#echo ${score1[@]}
+#echo ${score2[@]}
+
+
+for ((i=1; i<$length+1; i++))
+do 
+
+	if [ "${score1[i]}" -gt "${score2[i]}" ]; then
+    	vathmoi[2*i-1]="${omada1[i]}"".""3"".""${score1[i]}"".""${score2[i]}"          # edw fainetai oti ana agwna grafw dyo fores ston vathmoi[@] mia gia kathe omada
+    	vathmoi[2*i]="${omada2[i]}"".""0"".""${score2[i]}"".""${score1[i]}"            # sthn seira 38 mporeitai na svisetai to sxoleio kai na deite ti periexei o vathmoi[@] 
+	elif [ "${score1[i]}" -lt "${score2[i]}" ]; then
+		vathmoi[2*i-1]="${omada1[i]}"".""0"".""${score1[i]}"".""${score2[i]}"          # p.x gia greece.italy:3.2 exoume vathmoi[1]=greece.3.3.2 kai vathmoi[2]=italy.0.2.3
+    	vathmoi[2*i]="${omada2[i]}"".""3"".""${score2[i]}"".""${score1[i]}"            # dhladh exei to format onoma.pontoi.goal_pou_evale_to_onoma.goal_pou_efage_to_onoma
+	elif [ "${score1[i]}" -eq "${score2[i]}" ]; then
+		vathmoi[2*i-1]="${omada1[i]}"".""1"".""${score1[i]}"".""${score2[i]}"
+    	vathmoi[2*i]="${omada2[i]}"".""1"".""${score2[i]}"".""${score1[i]}"
+	fi
+
+done
+
+#echo ${vathmoi[@]}  # O pinakas vathmoi[@] exei megethos (2 * arithmo agwnwn). Ousiastika kathe apo tis 2 omades tou agwna posous pontous peire posa goal evale kai posa efage ana agwna
+
+###########################################################################################################################################################################################
+
+################################################ Kathorismos dinsctive onomadwn ###########################################################################################################
+
+k=1
+onomata[1]="$(echo "${vathmoi[1]}" | cut -d'.' -f1)"  # Topothetw to prwto onoma ston pinaka onomata kai epeita gia kathe onoma pou vriskw ston pinaka
+for ((i=2; i<2*$length+1; i++))                       # vathmoi an den yparxei hdh ston pinaka onomata tote to prosthetw se ayton. 
+do 
+    onoma1="$(echo "${vathmoi[i]}" | cut -d'.' -f1)"  # H entolh | cut -d'.' -f1 mou dinei thn plhroforia pou exei to keli vathmoi[i] prin thn prwth teleia '.' me thn xrhsh toy -f1 
+    flag=0
+	for ((j=1; j<$k+1; j++))
+	do
+
+	  if [ "$onoma1" == "${onomata[j]}" ]; then     # Estw kai mia fora na mpei se aythn thn for if-fi done tote yparxei hdh to onoma kai ayto to kserw vazontas flag=1
+	  	flag=1                                          
+	  fi
+
+	done
+    
+    if [ "$flag" == 0 ]; then                      # Etsi an to onoma ayto den yparxei ston pinaka onomata[k] tote to vazw
+	  	k=$(($k+1))                                # h timh $k einai o arithmos twn monadikwn onomatwn omadwn tou arxeiou. 
+	  	onomata[k]="$onoma1"                       
+	fi
+
+done
+
+#echo ${onomata[@]} # To onomata[@] periexei mono mia fora to onoma kathe omadas pou exei agonistei. Opou k o arithmos twn omadwn
+#echo $k
+
+##############################################################################################################################################################################################
+
+############################ Me vash ton pinaka onomata[@] vriskw skore kai goals gia kathe omada athrizontas apo ton vathmoi[@] tous pontous tis kai ta goals ################################
+
+
+for ((i=1; i<$k+1; i++))
+do
+     onoma1="${onomata[i]}"
+     line_points=0
+     total_points=0
+	 goals=0
+	 total_goals=0
+	 slaog=0
+ 	 total_sloag=0
+     
+     for ((j=1; j<2*$length+1; j++))
+     do
+         onoma2="$(echo "${vathmoi[j]}" | cut -d'.' -f1)"           # | cut -d'.' -f1  . Afou to onoma vriskete prin thn prwrth teleia '.' ginetai h xrhsh tou -f1
+
+         if [ "$onoma1" == "$onoma2" ]; then
+	  	  
+	  	  line_points="$(echo "${vathmoi[j]}" | cut -d'.' -f2)"     # | cut -d'.' -f2  . Afou oi pontoi vriskontai prin thn deyterh teleia '.' ginetai h xrhsh tou -f2
+	      total_points=$(($total_points+$line_points))               
+
+	      goals="$(echo "${vathmoi[j]}" | cut -d'.' -f3)"           # | cut -d'.' -f3  . Afou ta goal pou evale vriskontai prin thn trith teleia '.' ginetai h xrhsh tou -f3
+	      total_goals=$(($total_goals+$goals))
+
+	      slaog="$(echo "${vathmoi[j]}" | cut -d'.' -f4)"           # | cut -d'.' -f4  . Afou ta goal pou efage vriskontai meta thn trith teleia '.' ginetai h xrhsh tou -f4
+          total_sloag=$(($total_sloag+$slaog))
+	     
+	     fi
+ 
+     done
+
+    teliko[i]="${onomata[i]}"".""$total_points"".""$total_goals""-""$total_sloag"    # Edw grafw ton pinaka teliko[@] me morfh onoma.vathmoi.goal_evale-goal_efage
+
+done
+
+#echo ${teliko[@]}   # O pinakas teiliko[@] perilamvanei ataksinomita tous pontoys kai ta goals gia to kathe monadiko onoma omadas.....!!!!!!!!!!!!!!!!!!
+
+################################################################################################################################################################################################
+
+######################### Edw grafw se arxeio ton pinaka teliko[@] ton opoio taksinomw kai typwnw sto terminal kai epeita diagrafw to arxeio pou molis dimiourgisa #############################
+
+printf "%s\n" "${teliko[@]}" >Points            # Grafw ton teliko[@] san ena arxeio Points to opoio epishs diaxwrtizei ta periexomena tou me teleies '.'
+sort -t '.' -k2,2nr -k1,1  Points -o Points     # Entolh taksinomishs arxeiou. Takseinomei to arxeio Points arxika ws pros thn vathmologia me xrhsh numeric kai reverse -k2,2nr afou h vathmologia 
+                                                # vrisketai sthn deyterh thesh -k2,2 me vash tis teleies. Gia tis ises vathmologies taksinomei me vash ta alfarithmitika pou vriskontai prin thn
+exec < Points                                   # prwth teleia dhladh sthn thesh -k1,1.
+i=0
+while IFS='.' read x y z ;do                    # Travaw apo to taksinomimeno arxeio me vash tis teleies ta x=onoma y=vathmoi z=goals_evale-efage
+i=$(($i+1))
+echo -e $i."\t"$x"\t"$y"\t"$z                   # Typwnw sto terminal ta x y z symfwna me to format ektypwshs tis ekfwnishs.
+done
+ 
+rm Points                                       # Diagrafw to arxeio Points
+
+##################################################################################### THE END ##################################################################################################

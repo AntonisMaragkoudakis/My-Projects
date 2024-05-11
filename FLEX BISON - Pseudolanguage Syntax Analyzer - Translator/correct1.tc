@@ -1,0 +1,55 @@
+const s1[50] <- "Antonis Maragoudakis \nA.M=201303009\n": string;
+
+let limit, number, counter: int;
+const prime <- (n: int): bool => {
+let i: int;
+let result, isPrime: bool;
+if n < 0 then
+result <- prime(-n);
+else if n < 2 then
+result <- false;
+else if n = 2 then
+result <- true;
+else if n % 2 = 0 then
+result <- false;
+else
+i <- 3;
+isPrime <- true;
+while isPrime and (i < n / 2) loop
+isPrime <- n % i != 0;
+i <- i + 2;
+pool;
+result <- isPrime;
+fi;
+fi;
+fi;
+fi;
+return result;
+};
+
+
+const start <- (): int => {
+
+writeString(s1);
+
+writeString("Mexri poion ari8mo 8es na vreis tous protous ari8mous?\n");
+limit <- readInt();
+writeString("Oi protoi ari8moi mexri ayton ton ari8mo einai oi :\n");
+counter <- 0;
+number <- 2;
+while number <= limit loop
+if prime(number) then
+counter <- counter + 1;
+writeInt(number);
+writeString("\n");
+fi;
+number <- number + 1;
+pool;
+writeString("\nTo pli8os ton proton ari8mon mexri ton ari8mo ");
+writeInt(limit);
+writeString(" einai :");
+writeInt(counter);
+writeString(" \n");
+return 0;
+}
+

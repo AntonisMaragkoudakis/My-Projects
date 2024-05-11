@@ -1,0 +1,41 @@
+const s[50] <- "\nDwsete ena 10araki sto project :)\n": string;
+const s1[50] <- "Antonis Maragoudakis TEAC program\nA.M=201303009\n": string;
+let x[10], y[], z, k[7] : real;
+let a[], b[2], c, d[12] : real;
+
+
+
+const start <- (): int => {
+
+let i, n, t1<-0, t2<-1, next_term : int;
+
+writeString(s);
+
+x[t2] <- 12;
+k[4] <-11+3*t2-t2((i-t2)%t2) - x[t2];
+
+vathmos<-readReal();
+if vathmos = 10 then
+       	writeString("Eyxaristo Poly!!! Gia sas..!!!  Kalh sinexeia..!!!\n");
+fi;
+
+while vathmos != 10 loop
+writeString("An den valete 10 den tha termatiso pote!!!\nVatle 10 parakalo:\n\n");
+vathmos<-readReal();
+	if vathmos = 10 then
+       	writeString("Eyxaristo Poly!!! Gia sas..!!!  Kalh sinexeia..!!!\n");
+        else if 10 < vathmos then
+        writeString("Den thelo pano apo 10. Eimai semnos!!\n");
+        else if vathmos < 0then
+        writeString("Oxi kai mion. Eiste skliros :( :( :( \n");
+        fi;
+        fi;
+        fi;
+pool;
+
+a[]<- 12-t2;  .......................lathos
+
+return 0;
+}
+
+
